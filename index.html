@@ -11,6 +11,7 @@
     <!-- <link rel="stylesheet" href="assets/plugins/owl.carousel/css/animate.css"> -->
     <link rel="stylesheet" href="assets/css/sweetalert.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -84,7 +85,8 @@
                     </div>
                 </div>
 			</div>
-			<div class="item animated fadeInLeft ">
+			<div class="item">
+                    <span class="animated owl-backSlide-in"></span>
                 <div class="image-bg">
                     <img src="assets/img/content/slider-002.jpg" class="image-bg-source">
                 </div>
@@ -742,8 +744,9 @@ their clients with the best life insurance and annuity products on the market to
     <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
  
     <!--[if (gte IE 9) | (!IE)]><!-->  
-        <script type="text/javascript" src="assets/js/jquery-2.1.3.min68b3.js?ver=1"></script>
-    <!--<![endif]-->  
+        
+    <!--<![endif]--> 
+    <script type="text/javascript" src="assets/js/jquery-2.1.3.min68b3.js?ver=1"></script> 
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/toastr.min.js"></script>
@@ -758,11 +761,15 @@ their clients with the best life insurance and annuity products on the market to
     <script src="js/web.js"></script>
 
     <script>
+        var owlh;
             $(document).ready(function() {
-              var owlh = $("#home-slider");
-
-              
+            owlh = $("#home-slider");
     });
+    var owlh;
+    owlh = $("#home-slider");
+    owlh.on('changed.owl.carousel', function(e) {
+    console.log("test");
+  });
     </script>
 
 

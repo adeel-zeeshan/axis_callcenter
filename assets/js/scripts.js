@@ -130,22 +130,25 @@
             singleItem:true,
             pagination: false,
 			autoPlay : 4000,
-            navigationText : ['<img src="legacyassets/img/content/prev-arrow.png">','<img src="legacyassets/img/content/next-arrow.png">']
+            navigationText : [''],
+            transitionStyle : "fade",
+            addClassActive:true
         });
+
 		
-		$(document.documentElement).keyup(function (event) {    
-			var owl = $("#home-slider");
+		// $(document.documentElement).keyup(function (event) {    
+		// 	var owl = $("#home-slider");
 
-			// handle cursor keys
-			if (event.keyCode == 37) {
-			   // go left
-			   owl.trigger('owl.prev');
-			} else if (event.keyCode == 39) {
-			   // go right
-			   owl.trigger('owl.next');
-			}
+		// 	// handle cursor keys
+		// 	if (event.keyCode == 37) {
+		// 	   // go left
+		// 	   owl.trigger('owl.prev');
+		// 	} else if (event.keyCode == 39) {
+		// 	   // go right
+		// 	   owl.trigger('owl.next');
+		// 	}
 
-		});
+		// });
 
         $('.image-bg').each(function(){
             $(this).css({

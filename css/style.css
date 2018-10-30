@@ -1,0 +1,68 @@
+
+.carousel-arrow-prev{
+	cursor: pointer;
+   width: 60px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 300px;
+    margin-top: -31px;
+    left: 20px;
+    opacity: .6;
+}
+.carousel-arrow-next{
+	cursor: pointer;
+   width: 60px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 300px;
+    margin-top: -31px;
+    right: 20px;
+    opacity: .6;
+}
+.arrows {
+    width: 15px;
+    height: 15px;
+    border-color: #fff;
+    margin-top: 23px;
+    margin-left: 25px;
+}
+
+.prev{
+   border-bottom: 2px solid #fff;
+   border-left: 2px solid #fff;
+   transform: rotate(45deg);
+}
+
+   
+.next {
+   border-bottom: 2px solid #fff;
+   border-left: 2px solid #fff;
+   transform: rotate(-135deg);
+    margin-left: 17px;
+}
+.carousel-arrow-next:hover,
+.carousel-arrow-prev:hover{
+	opacity: 1;
+	background-color: rgba(0,0,0,.3);
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url("../images/lights.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff; }
+
+.dark-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+
