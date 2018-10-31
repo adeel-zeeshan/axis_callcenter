@@ -77,8 +77,13 @@
         eachMoveUpdate: function() {
             !0 === this.options.lazyLoad && this.lazyLoad();
             !0 === this.options.autoHeight && this.autoHeight();
-            this.onVisibleItems();
-            "function" === typeof this.options.afterAction && this.options.afterAction.apply(this, [this.$elem])
+           b = this.onVisibleItems();
+            "function" === typeof this.options.afterAction && this.options.afterAction.apply(this, [this.$elem]);
+            if ($('.owl-item.active .item span#animated')) {
+                var animation = $('.owl-item.active .item span#animated').attr('class');
+               if(animation) {this.transitionTypes(animation);}
+               else {this.transitionTypes('fade');}
+            }
         },
         updateVars: function() {
             "function" === typeof this.options.beforeUpdate && this.options.beforeUpdate.apply(this, [this.$elem]);
@@ -199,7 +204,7 @@
             this.positionsInArray = [0];
             this.pagesInArray = [];
             for (e = 0; e < this.itemsAmount; e += 1) b += this.itemWidth, this.positionsInArray.push(-b), !0 === this.options.scrollPerPage && (c = f(this.$owlItems[e]),
-                c = c.data("owl-roundPages"), c !== a && (this.pagesInArray[a] = this.positionsInArray[e], a = c))
+                c = c.data("owl-roundPages"), c !== a && (this.pagesInArray[a] = this.positionsInArray[e], a = c));
         },
         buildControls: function() {
             if (!0 === this.options.navigation || !0 === this.options.pagination) this.owlControls = f('<div class="owl-controls"/>').toggleClass("clickable", !this.browser.isTouch).appendTo(this.$elem);
@@ -544,7 +549,7 @@
                 a.hoverStatus = "stop"
             });
             a.$elem.on("owl.goTo", function(b, e) {
-                a.goTo(e)
+                a.goTo(e);
             });
             a.$elem.on("owl.jumpTo", function(b, e) {
                 a.jumpTo(e)

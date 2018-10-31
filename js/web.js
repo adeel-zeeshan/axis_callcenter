@@ -8,5 +8,7 @@
       $(document).on('click', '.carousel-arrow-prev', function(){
             owlh.trigger('owl.prev');
       });
+      // $('.owl-item.active').trigger(animation);
+
 
     });

@@ -75,7 +75,8 @@
 
     <section id="home-hero">
         <div id="home-slider" class="owl-carousel owl-theme">
-            <div class="item animated owl-fadeUp-in ">
+            <div class="item owl-fadeUp-in ">
+                    <!-- <span class="fadeUp"></span> -->
                 <div class="image-bg">
                     <img src="assets/img/content/slider-001.jpg" class="image-bg-source">
                     <div class="carousel-caption text-left">
@@ -86,7 +87,7 @@
                 </div>
 			</div>
 			<div class="item">
-                    <span class="animated owl-backSlide-in"></span>
+                    <span id="animated" class="backSlide"></span>
                 <div class="image-bg">
                     <img src="assets/img/content/slider-002.jpg" class="image-bg-source">
                 </div>
@@ -753,6 +754,7 @@ their clients with the best life insurance and annuity products on the market to
     <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
     <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
     <script type="text/javascript" src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+    <!-- <script type="text/javascript" src="js/test.js"></script> -->
     <script type="text/javascript" src="assets/js/magnific-popup/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="assets/js/waypoints.js"></script>
     <script type="text/javascript" src="assets/js/countto.js"></script>
@@ -765,11 +767,11 @@ their clients with the best life insurance and annuity products on the market to
             $(document).ready(function() {
             owlh = $("#home-slider");
     });
-    var owlh;
-    owlh = $("#home-slider");
-    owlh.on('changed.owl.carousel', function(e) {
-    console.log("test");
-  });
+//     var owlh;
+//     owlh = $("#home-slider");
+//     owlh.on('changed.owl.carousel', function(e) {
+//     console.log("test");
+//   });
     </script>
 
 
