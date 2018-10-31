@@ -617,8 +617,8 @@
             this.owl.visibleItems = this.visibleItems
         },
         transitionTypes: function(a) {
-            this.outClass = "owl-" + a + "-out";
-            this.inClass = "owl-" + a + "-in"
+            this.outClass = "animated owl-" + a + "-out";
+            this.inClass = "animated owl-" + a + "-in"
         },
         singleItemTransition: function() {
             var a = this,
